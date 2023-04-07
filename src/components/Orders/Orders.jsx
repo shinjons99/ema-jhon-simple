@@ -4,6 +4,8 @@ import { Link, useLoaderData } from "react-router-dom";
 import ReviewItem from "../ReviewItem/ReviewItem";
 import "./Orders.css";
 import { deleteShoppingCart, removeFromDb } from "../../utilities/fakedb";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const Orders = () => {
   const savedCart = useLoaderData();
@@ -34,7 +36,9 @@ const Orders = () => {
       <div className="cart-container">
         <Cart cart={cart} handleClearCart={handleClearCart}>
           <Link className="proceed-link" to='/CheckOut'>
-            <button className="btn-proceed">Proceed Checkout</button>
+            <button className="btn-proceed">Proceed Checkout
+            <FontAwesomeIcon className="credit-color" icon= { faArrowRight }/>
+            </button>
           </Link>
 
         </Cart>
