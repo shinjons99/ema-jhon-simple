@@ -15,3 +15,18 @@
  * 4. set context value
  * 5. set the provider
  */
+
+/**
+ * Hosting
+ * one time per pc
+ * 1. npm install -g firebase-tools
+ * 2. firebase login
+ * 
+ * 
+ * for each project one tme
+ * 1. firebase init
+ * 2. proceed
+ * 3. hosting: firebase (up and down arrow) use space bar to select
+ * 4. existing project
+ * 5. select the project carefully
+ */
